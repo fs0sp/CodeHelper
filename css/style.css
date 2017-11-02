@@ -1,0 +1,351 @@
+
+html,body{
+	
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	
+}
+
+header{
+	
+	background-color: dodgerblue;
+	color: white;
+	height: 50px;
+	top: 0;
+	
+	
+}
+
+.title {
+	color: white;
+}
+
+header h1{
+	display: inline;
+	float: left;
+	margin-top: 0px;
+	margin-right: 10px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+nav ul{
+	padding: 0px;
+	float: left;
+}
+
+nav li{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	
+}
+
+header a{
+	
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	
+}
+
+nav ul li{
+	
+	margin-left: 10px;
+}
+
+
+.title{
+	
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	
+	
+}
+
+
+.homewhite{
+	
+	background-color: black;
+	padding: 16px 5px 10px 5px;
+	
+	
+}
+
+.sameclass{
+	padding: 16px 5px 10px 5px;
+}
+.sameclass:hover{
+	background-color:black;
+	padding: 16px 5px 10px 5px;
+	
+}
+
+.division {
+	background-color: black;
+	height: 6px;
+}
+
+
+.image{
+	
+	background-image: url(../img/image1.jpg);
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	opacity: 0.8;
+	
+	
+}
+
+
+.text{
+	
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	margin-bottom: 25px;
+	font-size: 40px;
+	
+	
+}
+
+.get{
+	text-decoration: none;
+	border: 3px solid dodgerblue;
+	border-radius: 10px;
+	padding: 20px 20px;
+	font-size: 24px;
+	color: dodgerblue;
+	font-family: 'Roboto Condensed', sans-serif;
+	cursor: pointer;
+}
+
+.combine{
+	
+	text-align: center;
+	padding: 20%;
+}
+
+.get:hover{
+	
+	color: white;
+}
+
+/* OUR TEAM  */
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+
+
+/* END OF OUR TEAM */
+
+
+/* MAIN SITE CSS */
+
+.main {
+	
+	height: 500px;
+	width: 100%;
+	background-image: url(../img/main.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.7;
+	
+	
+}
+
+.main h1{
+	
+	text-align: center;
+	padding: 200px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+	margin: 0;
+
+}
+
+/* TOP MENU OF MAIN PAGE */
+
+.topmenu{
+	
+	background-color: dodgerblue;
+	color: white;
+	height: 60px;
+	top: 0;
+	
+	
+}
+
+.topmenu li{
+	
+	display: inline-block;
+	text-decoration: none;
+	
+	
+}
+
+.topmenu ul li{
+	display: inline;
+	padding-right: 20px;
+	padding-left: 10px;
+	
+	
+	
+}
+
+.topmenu a{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	padding: 20px 20px 16px 10px;       /* FOR COLOR */
+	margin: 0;	
+}
+
+.topmenu ul{
+	float: left;
+	margin: 0;
+	
+}
+
+.menucolor:hover{
+	
+	padding: 20px 20px 16px 10px;
+	background-color: black;
+	
+}
+
+
+
+/*          TOP MENU ENDS      */
+
+
+
+/* MAIN PAGE CONTENT    */
+
+
+.maincontent {
+	
+	height: 720px;
+	width: 100%;
+	margin: 10px;
+	padding: 0;
+	background-color:
+}
+
+.maincontent h1{
+	
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Roboto',sans-serif;
+	margin: 0;
+}
+
+.maincontent p{
+	text-align: center;
+	font-size: 25px;
+	margin: 0;
+	font-family: sans-serif;
+	
+}
+
+}
+/* MAIN PAGE CONTENT ENDS  */
+
+/* FOOTER OF MAIN PAGE */
+
+.mainfooter{
+	
+	height: 60px;
+	width: 100%;
+	background-color: dodgerblue;
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding-top: 30px;
+	font-size: 30px;
+	font-family: 'Oswald',sans-serif;
+}
+
+
+.footermain{
+	height: 60px;
+	width: 100%;
+	background-color: dodgerblue;
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 30px;
+	font-family: 'Oswald',sans-serif;
+}
+
+
+/* MAIN FOOTER ENDS HERE */
+
