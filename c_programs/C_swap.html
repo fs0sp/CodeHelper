@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../img/CodeHelper.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto+Condensed" rel="stylesheet">
+	<title>CodeHelper | Helping students to learn Code.</title>
+</head>
+<body>
+ <header>
+ 	<nav>
+		<h1>CodeHelper</h1>
+ 		<ul>
+ 			<li><a class="homewhite" href="#">Home</a></li>
+ 			<li><a class="sameclass" href="#">Contact Us</a>
+ 			<li><a class="sameclass" href="#">About Us</a>
+			<li><a class="sameclass" href="#">Our Team</a>
+ 		</ul>
+ 	</nav>
+ </header>
+ 
+<div class="main">
+	<div class="ptext">
+	<h1>Welcome to Code Helper </h1>
+	</div>
+</div>
+
+
+<div class="topmenu">
+ 	<nav>
+ 		<ul>
+ 			<li><a class="menucolor" target="_blank" href="../c.html">C</a></li>
+ 			<li><a class="menucolor" target="_blank" href="#">C++</a>
+ 			<li><a class="menucolor" target="_blank" href="#">Python</a>
+			<li><a class="menucolor" target="_blank" href="#">Java</a>
+ 		</ul>
+ 	</nav>
+</div>
+
+<div class="c-bs">
+	<h1>Swapping Of Two Numbers</h1><br>
+	<p>
+		In this program we will swap two numbers.
+	</p><br>
+	
+	<h2 class="source-code">➣&nbsp;Source Code</h2>
+	
+	<p>
+		<pre> 
+		<xmp>   
+#include <stdio.h>
+int main()
+{
+      int firstNumber, secondNumber, temp;
+
+      printf("Enter first number: ");
+      scanf("%d", &firstNumber);
+
+      printf("Enter second number: ");
+      scanf("%d",&secondNumber);
+
+      // Value of firstNumber is assigned to temp
+      temp = firstNumber;
+
+      // Value of secondNumber is assigned to firstNumber
+      firstNumber = secondNumber;
+
+      // Value of temp(which contains the initial value of firstNumber) is assigned to secondNumber
+      secondNumber = temp;
+
+      printf("\nAfter swapping, firstNumber = %.2lf\n", firstNumber);
+      printf("After swapping, secondNumber = %.2lf", secondNumber);
+
+      return 0;
+}
+
+	</xmp>
+		 
+		</pre>
+	</p>
+	
+	<h2 class="source-code"> ➣&nbsp;Output</h1>
+	<pre style="font-size: 20px;"> 
+Enter first number: 46
+Enter second number: 69
+
+After swapping, firstNumber = 69
+After swapping, secondNumber = 46
+		
+	</pre>
+</div>
+
+
+<div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
+	
+	<div class="footermain">Made with ❤</div>

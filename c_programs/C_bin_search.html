@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../img/CodeHelper.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto+Condensed" rel="stylesheet">
+	<title>CodeHelper | Helping students to learn Code.</title>
+</head>
+<body>
+ <header>
+ 	<nav>
+		<h1>CodeHelper</h1>
+ 		<ul>
+ 			<li><a class="homewhite" href="#">Home</a></li>
+ 			<li><a class="sameclass" href="#">Contact Us</a>
+ 			<li><a class="sameclass" href="#">About Us</a>
+			<li><a class="sameclass" href="#">Our Team</a>
+ 		</ul>
+ 	</nav>
+ </header>
+ 
+<div class="main">
+	<div class="ptext">
+	<h1>Welcome to Code Helper </h1>
+	</div>
+</div>
+
+
+<div class="topmenu">
+ 	<nav>
+ 		<ul>
+ 			<li><a class="menucolor" target="_blank" href="../c.html">C</a></li>
+ 			<li><a class="menucolor" target="_blank" href="#">C++</a>
+ 			<li><a class="menucolor" target="_blank" href="../python.html">Python</a>
+			<li><a class="menucolor" target="_blank" href="#">Java</a>
+ 		</ul>
+ 	</nav>
+</div>
+
+<div class="c-bs">
+	<h1>Binary Search</h1><br>
+	<p>
+		Binary Search is an algorithm to search any element in a sorted array.
+	</p><br>
+	
+	<h2 class="source-code">➣&nbsp;Source Code</h2>
+	
+	<p>
+		<pre> 
+		<xmp>   
+#include <stdio.h>
+int main()
+{
+     
+	clrscr();
+	int n, i, arr[50], search, first, last, middle;
+	printf("Enter total number of elements :");
+	scanf("%d",&n);
+	printf("Enter %d number :", n);
+	for (i=0; i<n; i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	printf("Enter a number to find :");
+	scanf("%d", &search);
+	first = 0;
+	last = n-1;
+	middle = (first+last)/2;
+	while (first <= last)
+	{
+		if(arr[middle] < search)
+		{
+			first = middle + 1;
+
+		}
+		else if(arr[middle] == search)
+		{
+			printf("%d found at location %d\n", search, middle+1);
+			break;
+		}
+		else
+		{
+			 last = middle - 1;
+		}
+		middle = (first + last)/2;
+	}
+	if(first > last)
+	{
+		printf("Not found! %d is not present in the list.",search);
+	}
+	getch();
+}
+
+	</xmp>
+		 
+		</pre>
+	</p>
+	
+	<h2 class="source-code"> ➣&nbsp;Output</h1>
+	<pre style="font-size: 20px;"> 
+Enter total number of elements : 5
+Enter 5 number : 12
+23
+34
+54
+56
+Enter a number to find :54
+54 is found at location 4
+	
+		
+	</pre>
+</div>
+
+<div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
+
+	<div class="footermain">Made with ❤</div>

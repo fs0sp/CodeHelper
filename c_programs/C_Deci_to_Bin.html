@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../img/CodeHelper.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto+Condensed" rel="stylesheet">
+	<title>CodeHelper | Helping students to learn Code.</title>
+</head>
+<body>
+ <header>
+ 	<nav>
+		<h1>CodeHelper</h1>
+ 		<ul>
+ 			<li><a class="homewhite" href="#">Home</a></li>
+ 			<li><a class="sameclass" href="#">Contact Us</a>
+ 			<li><a class="sameclass" href="#">About Us</a>
+			<li><a class="sameclass" href="#">Our Team</a>
+ 		</ul>
+ 	</nav>
+ </header>
+ 
+<div class="main">
+	<div class="ptext">
+	<h1>Welcome to Code Helper </h1>
+	</div>
+</div>
+
+
+<div class="topmenu">
+ 	<nav>
+ 		<ul>
+ 			<li><a class="menucolor" target="_blank" href="../c.html">C</a></li>
+ 			<li><a class="menucolor" target="_blank" href="#">C++</a>
+ 			<li><a class="menucolor" target="_blank" href="#">Python</a>
+			<li><a class="menucolor" target="_blank" href="#">Java</a>
+ 		</ul>
+ 	</nav>
+</div>
+
+<div class="c-bs">
+	<h1> Decimal To Binary</h1><br>
+	<p>
+		
+	</p><br>
+	
+	<h2 class="source-code">➣&nbsp;Source Code</h2>
+	
+	<p>
+		<pre> 
+		<xmp>   
+#include <stdio.h>
+
+void decToBinary(int);
+
+int main()
+{
+    int number;
+
+    printf("Enter number to convert to binary: ");
+    scanf("%d", &number);
+    
+    decToBinary(number);
+	return 0;
+}
+
+void decToBinary(int num)
+{
+    if (num == 0)
+    {
+        return ;
+    }
+
+    decToBinary(num / 2);
+    printf("%d", num % 2);
+}
+	</xmp>
+		 
+		</pre>
+	</p>
+	
+	<h2 class="source-code"> ➣&nbsp;Output</h1>
+	<pre style="font-size: 20px;"> 
+Enter number to convert to binary: 45
+101101
+	</pre>
+</div>
+<div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
+
+
+	
+	<div class="footermain">Made with ❤</div>
