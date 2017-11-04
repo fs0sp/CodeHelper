@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../img/CodeHelper.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto+Condensed" rel="stylesheet">
+	<title>CodeHelper | Helping students to learn Code.</title>
+</head>
+<body>
+ <header>
+ 	<nav>
+		<h1>CodeHelper</h1>
+ 		<ul>
+ 			<li><a class="homewhite" href="../main.html">Home</a></li>
+ 			<li><a class="sameclass" href="#">Contact Us</a>
+ 			<li><a class="sameclass" href="#">About Us</a>
+			<li><a class="sameclass" href="#">Our Team</a>
+ 		</ul>
+ 	</nav>
+ </header>
+ 
+<div class="main">
+	<div class="ptext">
+	<h1>Welcome to Code Helper </h1>
+	</div>
+</div>
+
+
+<div class="topmenu">
+ 	<nav>
+ 		<ul>
+ 			<li><a class="menucolor" target="_blank" href="../c.html">C</a></li>
+ 			<li><a class="menucolor" target="_blank" href="../c++.html">C++</a>
+ 			<li><a class="menucolor" target="_blank" href="../python.html">Python</a>
+			<li><a class="menucolor" target="_blank" href="../java.html">Java</a>
+ 		</ul>
+ 	</nav>
+</div>
+
+<div class="c-bs">
+	<h1> Bubble Sort</h1><br>
+	<p>
+		To find out the factorial of the give number.
+	</p><br>
+	
+	<h2 class="source-code">➣&nbsp;Source Code</h2>
+	
+	<p>
+		<pre> 
+		<xmp>   
+public class BubbleSortExample {  
+    static void bubbleSort(int[] arr) {  
+        int n = arr.length;  
+        int temp = 0;  
+         for(int i=0; i < n; i++){  
+                 for(int j=1; j < (n-i); j++){  
+                          if(arr[j-1] > arr[j]){  
+                                 //swap elements  
+                                 temp = arr[j-1];  
+                                 arr[j-1] = arr[j];  
+                                 arr[j] = temp;  
+                         }  
+                          
+                 }  
+         }  
+  
+    }  
+    public static void main(String[] args) {  
+                int arr[] ={3,60,35,2,45,320,5};  
+                 
+                System.out.println("Array Before Bubble Sort");  
+                for(int i=0; i < arr.length; i++){  
+                        System.out.print(arr[i] + " ");  
+                }  
+                System.out.println();  
+                  
+                bubbleSort(arr);//sorting array elements using bubble sort  
+                 
+                System.out.println("Array After Bubble Sort");  
+                for(int i=0; i < arr.length; i++){  
+                        System.out.print(arr[i] + " ");  
+                }  
+   
+        }  
+}  
+	</xmp>
+		 
+		</pre>
+	</p>
+	
+	<h2 class="source-code"> ➣&nbsp;Output</h1>
+	<pre style="font-size: 20px;"> 
+Array Before Bubble Sort
+3 60 35 2 45 320 5 
+Array After Bubble Sort
+2 3 5 35 45 60 320 
+		
+	</pre>
+</div>
+
+<div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
+	
+	<div class="footermain">Made with ❤</div>

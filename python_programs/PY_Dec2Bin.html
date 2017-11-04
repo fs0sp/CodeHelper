@@ -12,7 +12,7 @@
  	<nav>
 		<h1>CodeHelper</h1>
  		<ul>
- 			<li><a class="homewhite" href="#">Home</a></li>
+ 			<li><a class="homewhite" href="../main.html">Home</a></li>
  			<li><a class="sameclass" href="#">Contact Us</a>
  			<li><a class="sameclass" href="#">About Us</a>
 			<li><a class="sameclass" href="#">Our Team</a>
@@ -33,13 +33,13 @@
  			<li><a class="menucolor" target="_blank" href="../c.html">C</a></li>
  			<li><a class="menucolor" target="_blank" href="../c++.html">C++</a>
  			<li><a class="menucolor" target="_blank" href="../python.html">Python</a>
-			<li><a class="menucolor" target="_blank" href="#">Java</a>
+			<li><a class="menucolor" target="_blank" href="../java.html">Java</a>
  		</ul>
  	</nav>
 </div>
 
 <div class="c-bs">
-	<h1> Decimal To Binary</h1><br>
+	<h1> Conversion of Decimal to Binary</h1><br>
 	<p>
 		
 	</p><br>
@@ -49,31 +49,17 @@
 	<p>
 		<pre> 
 		<xmp>   
-#include <stdio.h>
+def convertToBinary(n):
+   """Function to print binary number
+   for the input decimal using recursion"""
+   if n > 1:
+       convertToBinary(n//2)
+   print(n % 2,end = '')
 
-void decToBinary(int);
+# decimal number
+dec = 34
 
-int main()
-{
-    int number;
-
-    printf("Enter number to convert to binary: ");
-    scanf("%d", &number);
-    
-    decToBinary(number);
-	return 0;
-}
-
-void decToBinary(int num)
-{
-    if (num == 0)
-    {
-        return ;
-    }
-
-    decToBinary(num / 2);
-    printf("%d", num % 2);
-}
+convertToBinary(dec)
 	</xmp>
 		 
 		</pre>
@@ -81,12 +67,11 @@ void decToBinary(int num)
 	
 	<h2 class="source-code"> ➣&nbsp;Output</h1>
 	<pre style="font-size: 20px;"> 
-Enter number to convert to binary: 45
-101101
+110100
+		
 	</pre>
 </div>
+
 <div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
-
-
 	
 	<div class="footermain">Made with ❤</div>

@@ -12,7 +12,7 @@
  	<nav>
 		<h1>CodeHelper</h1>
  		<ul>
- 			<li><a class="homewhite" href="#">Home</a></li>
+ 			<li><a class="homewhite" href="../main.html">Home</a></li>
  			<li><a class="sameclass" href="#">Contact Us</a>
  			<li><a class="sameclass" href="#">About Us</a>
 			<li><a class="sameclass" href="#">Our Team</a>
@@ -33,13 +33,13 @@
  			<li><a class="menucolor" target="_blank" href="../c.html">C</a></li>
  			<li><a class="menucolor" target="_blank" href="../c++.html">C++</a>
  			<li><a class="menucolor" target="_blank" href="../python.html">Python</a>
-			<li><a class="menucolor" target="_blank" href="#">Java</a>
+			<li><a class="menucolor" target="_blank" href="../java.html">Java</a>
  		</ul>
  	</nav>
 </div>
 
 <div class="c-bs">
-	<h1> Decimal To Binary</h1><br>
+	<h1> Leap Year or Not</h1><br>
 	<p>
 		
 	</p><br>
@@ -49,31 +49,23 @@
 	<p>
 		<pre> 
 		<xmp>   
-#include <stdio.h>
+# Python program to check if the input year is a leap year or not
 
-void decToBinary(int);
+year = 2000
 
-int main()
-{
-    int number;
+# To get year (integer input) from the user
+# year = int(input("Enter a year: "))
 
-    printf("Enter number to convert to binary: ");
-    scanf("%d", &number);
-    
-    decToBinary(number);
-	return 0;
-}
-
-void decToBinary(int num)
-{
-    if (num == 0)
-    {
-        return ;
-    }
-
-    decToBinary(num / 2);
-    printf("%d", num % 2);
-}
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("{0} is a leap year".format(year))
+       else:
+           print("{0} is not a leap year".format(year))
+   else:
+       print("{0} is a leap year".format(year))
+else:
+   print("{0} is not a leap year".format(year))
 	</xmp>
 		 
 		</pre>
@@ -81,12 +73,11 @@ void decToBinary(int num)
 	
 	<h2 class="source-code"> ➣&nbsp;Output</h1>
 	<pre style="font-size: 20px;"> 
-Enter number to convert to binary: 45
-101101
+2000 is a leap year
+		
 	</pre>
 </div>
+
 <div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
-
-
 	
 	<div class="footermain">Made with ❤</div>

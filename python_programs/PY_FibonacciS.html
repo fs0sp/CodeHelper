@@ -12,7 +12,7 @@
  	<nav>
 		<h1>CodeHelper</h1>
  		<ul>
- 			<li><a class="homewhite" href="#">Home</a></li>
+ 			<li><a class="homewhite" href="../main.html">Home</a></li>
  			<li><a class="sameclass" href="#">Contact Us</a>
  			<li><a class="sameclass" href="#">About Us</a>
 			<li><a class="sameclass" href="#">Our Team</a>
@@ -33,13 +33,13 @@
  			<li><a class="menucolor" target="_blank" href="../c.html">C</a></li>
  			<li><a class="menucolor" target="_blank" href="../c++.html">C++</a>
  			<li><a class="menucolor" target="_blank" href="../python.html">Python</a>
-			<li><a class="menucolor" target="_blank" href="#">Java</a>
+			<li><a class="menucolor" target="_blank" href="../java.html">Java</a>
  		</ul>
  	</nav>
 </div>
 
 <div class="c-bs">
-	<h1> Decimal To Binary</h1><br>
+	<h1> Fibonacci Sequence</h1><br>
 	<p>
 		
 	</p><br>
@@ -49,31 +49,34 @@
 	<p>
 		<pre> 
 		<xmp>   
-#include <stdio.h>
+# Program to display the Fibonacci sequence up to n-th term where n is provided by the user
 
-void decToBinary(int);
+# change this value for a different result
+nterms = 10
 
-int main()
-{
-    int number;
+# uncomment to take input from the user
+#nterms = int(input("How many terms? "))
 
-    printf("Enter number to convert to binary: ");
-    scanf("%d", &number);
-    
-    decToBinary(number);
-	return 0;
-}
+# first two terms
+n1 = 0
+n2 = 1
+count = 0
 
-void decToBinary(int num)
-{
-    if (num == 0)
-    {
-        return ;
-    }
-
-    decToBinary(num / 2);
-    printf("%d", num % 2);
-}
+# check if the number of terms is valid
+if nterms <= 0:
+   print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence upto",nterms,":")
+   while count < nterms:
+       print(n1,end=' , ')
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
 	</xmp>
 		 
 		</pre>
@@ -81,12 +84,12 @@ void decToBinary(int num)
 	
 	<h2 class="source-code"> ➣&nbsp;Output</h1>
 	<pre style="font-size: 20px;"> 
-Enter number to convert to binary: 45
-101101
+Fibonacci sequence upto 10 :
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
+		
 	</pre>
 </div>
+
 <div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
-
-
 	
 	<div class="footermain">Made with ❤</div>

@@ -79,11 +79,13 @@ nav ul li{
 
 .sameclass{
 	padding: 16px 5px 10px 5px;
+	transition: 1s;
 	
 }
 .sameclass:hover{
 	background-color:black;
 	padding: 16px 5px 10px 5px;
+	
 	
 }
 
@@ -108,6 +110,8 @@ nav ul li{
 }
 
 
+
+
 .text{
 	
 	margin: 0;
@@ -128,6 +132,7 @@ nav ul li{
 	color: dodgerblue;
 	font-family: 'Roboto Condensed', sans-serif;
 	cursor: pointer;
+	transition: 1.4s;
 }
 
 .combine{
@@ -136,9 +141,12 @@ nav ul li{
 	padding: 20%;
 }
 
+
 .get:hover{
 	
 	color: white;
+	background-color: dodgerblue;
+	font-size: 32px;
 }
 
 /* OUR TEAM  */
@@ -272,6 +280,10 @@ nav ul li{
 	float: left;
 	margin: 0;
 	
+}
+
+.menucolor{
+	transition: 1.2s;
 }
 
 .menucolor:hover{

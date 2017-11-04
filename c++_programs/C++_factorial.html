@@ -39,9 +39,9 @@
 </div>
 
 <div class="c-bs">
-	<h1> Decimal To Binary</h1><br>
+	<h1> Factorial of a Number</h1><br>
 	<p>
-		
+		The factorial of a positive integer n is equal to 1*2*3*...n.
 	</p><br>
 	
 	<h2 class="source-code">➣&nbsp;Source Code</h2>
@@ -49,30 +49,24 @@
 	<p>
 		<pre> 
 		<xmp>   
-#include <stdio.h>
-
-void decToBinary(int);
+#include <iostream>
+using namespace std;
 
 int main()
 {
-    int number;
+    unsigned int n;
+    unsigned long long factorial = 1;
 
-    printf("Enter number to convert to binary: ");
-    scanf("%d", &number);
-    
-    decToBinary(number);
-	return 0;
-}
+    cout << "Enter a positive integer: ";
+    cin >> n;
 
-void decToBinary(int num)
-{
-    if (num == 0)
+    for(int i = 1; i <=n; ++i)
     {
-        return ;
+        factorial *= i;
     }
 
-    decToBinary(num / 2);
-    printf("%d", num % 2);
+    cout << "Factorial of " << n << " = " << factorial;    
+    return 0;
 }
 	</xmp>
 		 
@@ -81,12 +75,12 @@ void decToBinary(int num)
 	
 	<h2 class="source-code"> ➣&nbsp;Output</h1>
 	<pre style="font-size: 20px;"> 
-Enter number to convert to binary: 45
-101101
+Enter a positive integer: 5
+Factorial of 5 = 120
+		
 	</pre>
 </div>
+
 <div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
-
-
 	
 	<div class="footermain">Made with ❤</div>

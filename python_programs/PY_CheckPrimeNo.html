@@ -12,7 +12,7 @@
  	<nav>
 		<h1>CodeHelper</h1>
  		<ul>
- 			<li><a class="homewhite" href="#">Home</a></li>
+ 			<li><a class="homewhite" href="../main.html">Home</a></li>
  			<li><a class="sameclass" href="#">Contact Us</a>
  			<li><a class="sameclass" href="#">About Us</a>
 			<li><a class="sameclass" href="#">Our Team</a>
@@ -33,15 +33,15 @@
  			<li><a class="menucolor" target="_blank" href="../c.html">C</a></li>
  			<li><a class="menucolor" target="_blank" href="../c++.html">C++</a>
  			<li><a class="menucolor" target="_blank" href="../python.html">Python</a>
-			<li><a class="menucolor" target="_blank" href="#">Java</a>
+			<li><a class="menucolor" target="_blank" href="../java.html">Java</a>
  		</ul>
  	</nav>
 </div>
 
 <div class="c-bs">
-	<h1> Decimal To Binary</h1><br>
+	<h1> Checking Prime Number</h1><br>
 	<p>
-		
+		This program shows you weather a number is prime or not.
 	</p><br>
 	
 	<h2 class="source-code">➣&nbsp;Source Code</h2>
@@ -49,31 +49,28 @@
 	<p>
 		<pre> 
 		<xmp>   
-#include <stdio.h>
+# Python program to check if the input number is prime or not
 
-void decToBinary(int);
+num = 407
 
-int main()
-{
-    int number;
+# take input from the user
+# num = int(input("Enter a number: "))
 
-    printf("Enter number to convert to binary: ");
-    scanf("%d", &number);
-    
-    decToBinary(number);
-	return 0;
-}
-
-void decToBinary(int num)
-{
-    if (num == 0)
-    {
-        return ;
-    }
-
-    decToBinary(num / 2);
-    printf("%d", num % 2);
-}
+# prime numbers are greater than 1
+if num > 1:
+   # check for factors
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
+       
+# if input number is less than
+# or equal to 1, it is not prime
+else:
+   print(num,"is not a prime number")
 	</xmp>
 		 
 		</pre>
@@ -81,12 +78,12 @@ void decToBinary(int num)
 	
 	<h2 class="source-code"> ➣&nbsp;Output</h1>
 	<pre style="font-size: 20px;"> 
-Enter number to convert to binary: 45
-101101
+407 is not a prime number
+11 times 37 is 407
+		
 	</pre>
 </div>
+
 <div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
-
-
 	
 	<div class="footermain">Made with ❤</div>

@@ -12,7 +12,7 @@
  	<nav>
 		<h1>CodeHelper</h1>
  		<ul>
- 			<li><a class="homewhite" href="#">Home</a></li>
+ 			<li><a class="homewhite" href="../main.html">Home</a></li>
  			<li><a class="sameclass" href="#">Contact Us</a>
  			<li><a class="sameclass" href="#">About Us</a>
 			<li><a class="sameclass" href="#">Our Team</a>
@@ -33,15 +33,15 @@
  			<li><a class="menucolor" target="_blank" href="../c.html">C</a></li>
  			<li><a class="menucolor" target="_blank" href="../c++.html">C++</a>
  			<li><a class="menucolor" target="_blank" href="../python.html">Python</a>
-			<li><a class="menucolor" target="_blank" href="#">Java</a>
+			<li><a class="menucolor" target="_blank" href="../java.html">Java</a>
  		</ul>
  	</nav>
 </div>
 
 <div class="c-bs">
-	<h1> Decimal To Binary</h1><br>
+	<h1> Factorial of a Number</h1><br>
 	<p>
-		
+		To find out the factorial of the give number.
 	</p><br>
 	
 	<h2 class="source-code">➣&nbsp;Source Code</h2>
@@ -49,31 +49,16 @@
 	<p>
 		<pre> 
 		<xmp>   
-#include <stdio.h>
-
-void decToBinary(int);
-
-int main()
-{
-    int number;
-
-    printf("Enter number to convert to binary: ");
-    scanf("%d", &number);
-    
-    decToBinary(number);
-	return 0;
-}
-
-void decToBinary(int num)
-{
-    if (num == 0)
-    {
-        return ;
-    }
-
-    decToBinary(num / 2);
-    printf("%d", num % 2);
-}
+class FactorialExample{  
+ public static void main(String args[]){  
+  int i,fact=1;  
+  int number=5;//It is the number to calculate factorial    
+  for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  System.out.println("Factorial of "+number+" is: "+fact);    
+ }  
+}  
 	</xmp>
 		 
 		</pre>
@@ -81,12 +66,11 @@ void decToBinary(int num)
 	
 	<h2 class="source-code"> ➣&nbsp;Output</h1>
 	<pre style="font-size: 20px;"> 
-Enter number to convert to binary: 45
-101101
+Factorial of 5 is: 120
+		
 	</pre>
 </div>
+
 <div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
-
-
 	
 	<div class="footermain">Made with ❤</div>

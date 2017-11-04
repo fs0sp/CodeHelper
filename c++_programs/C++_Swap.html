@@ -39,9 +39,9 @@
 </div>
 
 <div class="c-bs">
-	<h1> Decimal To Binary</h1><br>
+	<h1>Swapping Of Two Numbers</h1><br>
 	<p>
-		
+		In this program we will swap two numbers.
 	</p><br>
 	
 	<h2 class="source-code">➣&nbsp;Source Code</h2>
@@ -49,31 +49,26 @@
 	<p>
 		<pre> 
 		<xmp>   
-#include <stdio.h>
-
-void decToBinary(int);
+#include <iostream>
+using namespace std;
 
 int main()
 {
-    int number;
+    int a = 5, b = 10, temp;
 
-    printf("Enter number to convert to binary: ");
-    scanf("%d", &number);
-    
-    decToBinary(number);
-	return 0;
+    cout << "Before swapping." << endl;
+    cout << "a = " << a << ", b = " << b << endl;
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    cout << "\nAfter swapping." << endl;
+    cout << "a = " << a << ", b = " << b << endl;
+
+    return 0;
 }
 
-void decToBinary(int num)
-{
-    if (num == 0)
-    {
-        return ;
-    }
-
-    decToBinary(num / 2);
-    printf("%d", num % 2);
-}
 	</xmp>
 		 
 		</pre>
@@ -81,12 +76,16 @@ void decToBinary(int num)
 	
 	<h2 class="source-code"> ➣&nbsp;Output</h1>
 	<pre style="font-size: 20px;"> 
-Enter number to convert to binary: 45
-101101
+Before swapping.
+a = 5, b = 10
+
+After swapping.
+a = 10, b = 5
+		
 	</pre>
 </div>
+
+
 <div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
-
-
 	
 	<div class="footermain">Made with ❤</div>

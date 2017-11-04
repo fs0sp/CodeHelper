@@ -49,30 +49,35 @@
 	<p>
 		<pre> 
 		<xmp>   
-#include <stdio.h>
+#include <iostream>
+#include <cmath>
 
-void decToBinary(int);
+using namespace std;
+
+int convertBinaryToDecimal(long long);
 
 int main()
 {
-    int number;
+    long long n;
 
-    printf("Enter number to convert to binary: ");
-    scanf("%d", &number);
-    
-    decToBinary(number);
-	return 0;
+    cout << "Enter a binary number: ";
+    cin >> n;
+ 
+    cout << n << " in binary = " << convertBinaryToDecimal(n) << "in decimal";
+    return 0;
 }
 
-void decToBinary(int num)
+int convertBinaryToDecimal(long long n)
 {
-    if (num == 0)
+    int decimalNumber = 0, i = 0, remainder;
+    while (n!=0)
     {
-        return ;
+        remainder = n%10;
+        n /= 10;
+        decimalNumber += remainder*pow(2,i);
+        ++i;
     }
-
-    decToBinary(num / 2);
-    printf("%d", num % 2);
+    return decimalNumber;
 }
 	</xmp>
 		 
@@ -81,8 +86,8 @@ void decToBinary(int num)
 	
 	<h2 class="source-code"> ➣&nbsp;Output</h1>
 	<pre style="font-size: 20px;"> 
-Enter number to convert to binary: 45
-101101
+Enter a binary number: 1111
+1111 in binary = 15
 	</pre>
 </div>
 <div class="back"> <a href="../c.html">&nbsp;BACK&nbsp;</a> </div>
