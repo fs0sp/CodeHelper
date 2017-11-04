@@ -308,7 +308,7 @@ nav ul li{
 	width: 100%;
 	margin: 10px;
 	padding: 0;
-	background-color:
+	color: #227EBB;
 }
 
 .maincontent h1{
@@ -479,6 +479,7 @@ nav ul li{
 	color: dodgerblue;
 	transition: 0.8s;
 	
+	
 }
 
 .back a:hover{
@@ -487,3 +488,198 @@ nav ul li{
 }
 	
 /* BACK button ends */
+
+
+
+/* ABOUT US PAGE STARTS   */
+
+/* ABOUT - SHIVAM */
+
+.about-shivam{
+
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/starry-sky-2116792_1920.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: fixed;
+	opacity: 
+	
+	
+	
+	
+	
+}
+
+.shivam-pic{
+	height: 200px;
+	width: 200px;
+	filter: blur(0px);
+	background-image: url(../img/shivampic.png);
+	background-size: cover;
+	border: 2px solid white;
+	border-radius: 100px;
+	margin-left: 660px;
+	margin-top: 200px;
+	
+	
+	
+	
+	
+}
+
+.shivam-name h1{
+	text-align: center;
+	color: white;
+	font-family: 'Oswald',sans-serif;
+	
+}
+
+.shivam-title{
+	text-align: center;
+	color: white;
+	font-family: 'Montserrat', sans-serif;'
+}
+
+.shivam-description{
+	text-align: center;
+	color: white;
+	font-family: 'Roboto',sans-serif;
+}
+
+.social-linkedin{
+	height: 300px;
+	width: 300px;
+	color: dodgerblue;
+}
+
+
+.shivam-social-media{
+	height: 300px;
+	width: 300px;
+	transition: 2s;
+	display: inline;
+}
+
+.social-github {
+	
+	text-decoration: none;
+	margin-left:  670px;
+	color: white;
+	font-size: 20px;
+	border: 3px solid white;
+	padding: 10px;
+	transition: 1s;
+	font-family: 'Roboto',sans-serif;
+	
+}
+
+.social-linkedin {
+	text-decoration: none;
+	margin-left:  20px;
+	color: white;
+	font-size: 20px;
+	border: 2px solid white;
+	padding: 10px;
+	transition: 1s;
+	font-family: 'Roboto',sans-serif;
+}
+
+.social-github a{
+	text-decoration: none;
+	padding: 20px;
+	
+	
+}
+
+.social-linkedin a{
+	text-decoration: none;
+	padding: 20px;
+	
+}
+
+.social-github:hover{
+	background-color: dodgerblue;
+	font-size: 28px;
+	border: 2px solid dodgerblue;
+	
+}
+.social-linkedin:hover{
+	background-color: dodgerblue;
+	font-size: 28px;
+	border: 2px solid dodgerblue;
+	
+}
+
+
+
+/* ABOUT US PAGE COMPLETE */
+
+
+/* CONTACT US PAGE STARTS : */
+
+.contact-us{
+	height: 300px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.contact-us h1{
+	text-align: center;
+	font-family: 'Oswald',sans-serif;
+}
+
+.contact-us p{
+	text-align: center;
+	font-family:'Roboto',sans-serif;
+}
+.contact-us a{
+	color: dodgerblue;
+	padding: 10px;
+	
+}
+
+.contact-fb,.contact-ig,.contact-tw,.contact-ln{
+	text-decoration: none;
+	border: 3px solid dodgerblue;
+	transition: 1s;
+	
+	
+}
+
+.contact-social-icons{
+	text-align: center;
+	font-family: 'Roboto',sans-serif;
+	
+}
+
+
+.contact-fb:hover{
+	
+	background-color: dodgerblue;
+	color: white;
+	font-size: 24px;
+	
+}
+.contact-ig:hover{
+	background-color: dodgerblue;
+	color: white;
+	font-size: 24px;
+}
+.contact-tw:hover{
+	background-color: dodgerblue;
+	color: white;
+	font-size: 24px;
+}
+.contact-ln:hover{
+	background-color: dodgerblue;
+	color: white;
+	font-size: 24px;
+	
+}
+	
+}
