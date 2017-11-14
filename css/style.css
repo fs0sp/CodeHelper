@@ -105,11 +105,15 @@ nav ul li{
 	margin: 0;
 	padding: 0;
 	opacity: 0.8;
+	position: fixed;
 	
 	
 }
 
-
+.rightclass{
+	
+	
+}
 
 
 .text{
@@ -529,6 +533,7 @@ nav ul li{
 	
 	
 	
+	
 }
 
 .shivam-name h1{
@@ -536,18 +541,21 @@ nav ul li{
 	color: white;
 	font-family: 'Oswald',sans-serif;
 	
+	
 }
 
 .shivam-title{
 	text-align: center;
 	color: white;
 	font-family: 'Montserrat', sans-serif;'
+	
 }
 
 .shivam-description{
 	text-align: center;
 	color: white;
 	font-family: 'Roboto',sans-serif;
+	
 }
 
 .social-linkedin{
@@ -681,5 +689,110 @@ nav ul li{
 	font-size: 24px;
 	
 }
+
+
+/* LOGIN PAGE CSS */
+
+.form-page{
+	height: 500px;
+	margin: 0;
+}
+
+
+
+.log-in {
+	margin: 0;
+	height: 300px;
+	width: 500px;
+	background-color: rgba(0, 102, 255, 0.5);
+	margin-left: 500px;
+	margin-top: 60px;
+	border-radius: 30px;
 	
+}
+
+.log-in h1{
+	
+	color: white;
+	text-align: center;
+	font-family: 'Roboto',sans-serif;
+	margin: 0;
+}
+
+.form-input input{
+	width: 300px;
+	margin-left: 80px;
+	margin-top: 20px;
+	padding: 10px;
+	
+	
+}
+
+.form-input-submit{
+	margin-left: 210px;
+	
+}
+
+.login-signup{
+	margin: 0;
+	display: inline;
+	margin-left: 170px;
+	
+}
+
+.form-input-submit a{
+	text-decoration: none;
+	color: white;
+	border: 2px solid white;
+	border-radius: 7px;
+	padding: 12px;
+	transition: 1s;
+	font-family: 'Oswald',sans-serif;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-right: 70px;
+	font-size: 20px;
+}
+
+.form-input-submit a:hover{
+	border: 2px solid white;
+	border-radius: 7px;
+	padding: 15px 25px 15px 25px;
+	background-color: dodgerblue;
+	font-size: 22px;
+}
+.login-signup p{
+	 
+	 font-size: 14px;
+	 font-family: 'Roboto',sans-serif;
+}
+
+.login-signup a{
+	text-decoration: none;
+	margin-left: 200px;
+	border: 2px solid white;
+	
+	border-radius: 20px;
+	padding: 8px;
+	
+}
+
+/* SIGN UP PAGE */
+
+.sign-in {
+	margin: 0;
+	height: 400px;
+	width: 500px;
+	background-color: rgba(0, 102, 255, 0.5);
+	margin-left: 500px;
+	margin-top: 60px;
+	border-radius: 30px;
+}
+
+.sign-in h1{
+	
+	color: white;
+	text-align: center;
+	font-family: 'Roboto',sans-serif;
+	margin: 0;
 }
